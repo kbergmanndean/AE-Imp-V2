@@ -1,7 +1,8 @@
 //Duplicate links in carousel
+//note: must define tyoe of link, HTMLAnchorElement
 fix('a.rotoSlide', (element) => {
   let aeMap = new Map();
-  document.querySelectorAll(`a.rotoSlide`).forEach((link: HTMLAnchorElement) => {
+  document.querySelectorAll(`a.rotoSlide`).forEach((link) => {
     const href = link.href;
     if (!aeMap.has(href)) {
       aeMap.set(href, []);
