@@ -1,0 +1,27 @@
+Autocomplete formfield
+
+tel
+email
+name (full name)
+given-name (first name)
+family-name (last name)
+username
+current-password
+new-password
+organization
+street-address
+address-level4 (apartment number? /fourth line)
+address-level3 (address number and street name)
+address-level2 (city or town)
+address-level1 (state or province)
+country (country/territory code)
+country-name
+postal-code
+cc-name (name on credit card or cc-given-name + cc-family-name)
+cc-number
+cc-exp (cc-exp-month + cc-exp-year)
+cc-csc
+cc-type (Visa, etc)
+bday (bday-day + bday-month + bday-year)
+language
+url
