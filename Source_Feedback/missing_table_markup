@@ -1,0 +1,16 @@
+Data Table Missing Table Markup — (1.3.1, Level A)
+Issue Description
+There is tabular data which is not marked up as as a table.
+Technical Details
+This text should be structured in a <table> element with a <thead> section and a <tbody> section. Inside the <thead> section there should be a <tr> row containing <th> table headers. Inside the <tbody> element there should be <tr> rows containing <td> cells. The table should have a caption.
+Issue Location
+On https://www.meundies.com/products/feelfree-bikini-knockout-pink, the “Size guide” button opens a dialog with two tables, Domestic Sizing and International Sizing. Neither of these has proper table markup.
+
+Severity 
+Violation 2
+How to Fix the Issue
+
+Use proper table structure (<table><thead><tbody>).
+Resources for Further Learning
+
+https://www.w3.org/WAI/tutorials/tables/
