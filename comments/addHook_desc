@@ -1,0 +1,4 @@
+AddHook desc.
+Added accessible menu because  navigation menu items had hover-over submenus, and were also links themselves. Needed addHook because submenus did not show up on accessible Menu initially, code had nested divs in inconsistent format.
+
+This site needs an Accessible Menu because the navigation menu items have hover-over submenus, and are also links themselves. The Accessible Menu needs an addHook because the submenus show up at the same level as the top level nav links.

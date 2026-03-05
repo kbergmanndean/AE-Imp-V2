@@ -1,0 +1,2 @@
+Jira search filters for old tickets
+project in (IM) AND "Special Implementation[Dropdown]" in (EMPTY, "Legal Round IMP Team", "Logo Site IMP Team") AND ("Channel - Client Name[Select List (cascading)]" != "TEST CLIENT" OR "Channel - Client Name[Select List (cascading)]" = EMPTY) AND (fixVersion in unreleasedVersions() OR fixVersion is EMPTY) AND status in ("6", "10071") AND assignee in ("Kaia Bergmann-Dean") AND NOT (updated >= -1w OR statusCategory != Done) ORDER BY status ASC, priority, issuetype ASC, created ASC

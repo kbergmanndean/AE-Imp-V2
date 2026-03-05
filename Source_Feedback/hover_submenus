@@ -1,0 +1,9 @@
+FinalSite Template Site Menu with hover submenus Source Feedback
+Hover Content
+https://www.aledoisd.org/ - sitewide, main menu
+Accessibility Issue: When the mouse is hovering over the top level menu links in the site Menu, submenu content is visually conveyed to users, but this content is more difficult to navigate with a keyboard. Hovering or having keyboard focus on a menu link opens a submenu of more links relating to the top link. With a keyboard, tabbing forward in the menu moves the user into this submenu, and you cannot move directly to the next top level menu link and bypass the submenu. To navigate the menu you must also tab through every submenu.
+Rationale: It is important to recognize that not all users are able to operate a mouse and assistive technology devices require keyboard events.
+Recommendation: Ensure that all content that is available to users on hover is also available to keyboard-only users and that this content can be interacted with. To make this menu more navigable by keyboard, each top level menu link should have an adjacent button that will open the submenu for that link. That way, the user can choose when to open and navigate the submenus, and can move to the next top level menu item without going through each submenu.
+Because the top level menu items are links themselves, we cannot add a keyboard event for opening these submenus based on clicking the top level menu item.
+For Further Reference: Please visit W3C: Understanding Success Criteria 2.1.1: Keyboard
+https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html
