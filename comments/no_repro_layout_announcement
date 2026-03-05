@@ -1,0 +1,2 @@
+No Reproduce Layout Announcement
+I am not able to reproduce this bug with Voiceover. I’m wondering if this could be the result of the NVDA setting “Screen Layout” being turned on, as that setting makes it so that links that are on the same line visually are announced on the same line by the screen reader. Would it be possible to check if that setting is turned on in NVDA, and if so, re-test with that setting turned off?
