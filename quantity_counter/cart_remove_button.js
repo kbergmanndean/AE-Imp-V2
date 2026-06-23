@@ -1,3 +1,4 @@
+//cart remove button status announcement
 fix('.showcase-quantity-value', (element) => {
   $(element).closest('.showcase-viewer-cart-items').ATContext({ before: '' });
   $(element).closest('.showcase-viewer-cart-items').find('.ae-compliance-indent').attr({ 'role': 'status', 'aria-live': 'polite' });
