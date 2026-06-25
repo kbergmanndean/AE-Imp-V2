@@ -17,3 +17,25 @@ fix('.gallery-carousel__content .swiper-slide', (element) => {
   });
   $('.swiper-button-prev, .swiper-button-next').button().simulateClickOnKeypress();
 });
+
+//alt
+fix('.image-viewer__carousel [class^="custom-swiper-button-"]', (element) => {
+  let btnText = $(element).attr('aria-label');
+  $(element).ATContext({ before: `${btnText}` });
+  $(element).find('.ae-compliance-indent').ATContext({ after: `` });
+  $('.image-viewer__carousel .swiper').ATContext({before:''});
+  $('.image-viewer__carousel .swiper > .ae-compliance-indent').role('status').attr('aria-live','polite');
+  $(element).watch((ele) => {
+    let activeSlide = $(ele)
+      .prevAll('.swiper')
+      .first()
+      .find('.swiper-slide.swiper-slide-active')
+      .attr('aria-label');
+    $(ele)
+      .find('.ae-compliance-indent .ae-compliance-indent')
+      .text(`Slide ${activeSlide}`);
+    $(ele).closest('.image-viewer__carousel').find('.swiper > .ae-compliance-indent').text(`Slide ${activeSlide}`);
+  });
+  $(element).removeAttr('aria-label');
+  $(element).find('svg').hideFromAT();
+});
